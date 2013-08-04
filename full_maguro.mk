@@ -31,6 +31,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 # Inherit from maguro device
 $(call inherit-product, device/samsung/maguro/device.mk)
 
+# Inherit torch settings
+$(call inherit-product, vendor/ambient/config/common_ledflash.mk)
+
 # Set those variables here to overwrite the inherited values.
 PRODUCT_NAME := full_maguro
 PRODUCT_DEVICE := maguro
